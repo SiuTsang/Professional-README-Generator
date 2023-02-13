@@ -3,22 +3,25 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
   
-  # Description:
+  ## Description
   ${data.description}
 
-  # Installation:
+  ## Installation
   ${data.installation}
 
-  # Usage:
+  ## Usage
   ${data.usage}
 
-  # Contribution
+  ## URL
+  [https://siutsang.github.io/${data.title}/](https://siutsang.github.io/${data.title}/)
+
+  ## Credits
   ${data.credits}
 
-  # License
+  ## License
   ${data.license}
 
-  # Features
+  ## Features
   ${data.feature}
 `;
 }
